@@ -10,7 +10,9 @@ source $ZSH/oh-my-zsh.sh
 # use 256 color terminal
 export TERM=xterm-256color
 
-# use vim as standard editor
+export COLORTERM=truecolor
+
+# use nvim as standard editor
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 
@@ -31,4 +33,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
+fpath+=${ZDOTDIR:-~}/.zsh_functions
 fpath+=${ZDOTDIR:-~}/.zsh_functions
