@@ -1,0 +1,5 @@
+regolith.look.path: /usr/share/regolith-look/gruvbox
+wm.mod: Mod1
+wm.alt: Mod4
+regolith.wallpaper.file: 
+regolith.wallpaper.color.primary: black
