@@ -1,5 +1,6 @@
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:~/.dotnet:~/.local/bin:/usr/local/go/bin:$HOME/go/bin/:$HOME/Odin/
 export PATH=$HOME/local/bin:$PATH
+export PATH=$HOME/lua-5.4.7:$PATH
 export LD_LIBRARY_PATH=$HOME/local/lib:$LD_LIBRARY_PATH
 export MANPATH=$HOME/local/share/man:$MANPATH
 
@@ -8,12 +9,9 @@ ZSH_THEME="robbyrussell"
 plugins=(git ssh-agent)
 
 zstyle :omz:plugins:ssh-agent quiet yes
-zstyle :omz:plugins:ssh-agent identities id_github id_bitbucket id_digitalocean
+zstyle :omz:plugins:ssh-agent identities id_github id_bitbucket id_digitalocean id_aws.pem
 
 source $ZSH/oh-my-zsh.sh
-
-# use 256 color terminal
-export TERM=xterm-256color
 
 export COLORTERM=truecolor
 

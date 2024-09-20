@@ -3,6 +3,9 @@ import = [
 ]
 live_config_reload = true
 
+[env]
+TERM="xterm-256color"
+
 [window]
 decorations = "None"
 startup_mode = "Maximized"
